@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wedding Page</title>
+    <link rel="icon" href="images/LogoInBlack.png" type="image/png">
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: Georgia, serif;
-            background-color: #2e1e49;
-            background-image: url('images/repeat.png');
-            background-repeat: repeat;
+            font-family: "Brush Script MT", cursive;
+            background-color: #e8bdd1;
         }
         nav {
             background-color: #f7ddbb;
             padding: 15px 0;
             position: fixed;
-            top: 0;
+            top: 50px; /* Adjusted for logo space */
             width: 100%;
             z-index: 10;
         }
@@ -33,30 +32,41 @@
         }
         nav ul li a {
             text-decoration: none;
-            color: white;
+            color: #f7ddbb;
             font-size: 18px;
         }
+        .logo {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .logo img {
+            width: 100px;
+            height: auto;
+        }
         .main-content {
-            margin-top: 0;
+            margin-top: 100px; /* Adjusted for logo and navbar */
             display: flex;
             justify-content: center;
             align-items: flex-start;
             height: 100vh;
         }
-        .translucent-box {
-            background: rgba(255, 255, 255, 0.7);
-            width: 100%;
+        .wedding-title {
             text-align: center;
-            padding: 20px 0;
+            color: #f7ddbb;
+            font-size: 48px;
+            margin-top: 50px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
         }
-        .translucent-box img {
-            max-width: 1600px;
-            width: auto;
-            height: auto;
+        .wedding-title span {
+            display: inline-block;
+            border-bottom: 2px solid #f7ddbb;
         }
     </style>
 </head>
 <body>
+    <div class="logo">
+        <img src="images/LogoInBlack.png" alt="Wedding Logo">
+    </div>
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
@@ -67,10 +77,8 @@
             <li><a href="#registry">Registry</a></li>
         </ul>
     </nav>
-    <div class="main-content">
-        <div class="translucent-box">
-            <img src="images/Text.png" alt="Wedding Text">
-        </div>
+    <div class="wedding-title">
+        <span>The Wedding of Joshua & Emily</span>
     </div>
 </body>
 </html>
