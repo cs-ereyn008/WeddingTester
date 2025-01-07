@@ -6,7 +6,7 @@
     <title>Wedding Page</title>
     <link rel="icon" href="images/LogoInBlack.png" type="image/png">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Malibu&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Snell+Roundhand&display=swap');
 
         body {
             margin: 0;
@@ -68,18 +68,18 @@
         .overlay {
             position: relative;
             background: rgba(255, 255, 255, 0.6); /* Adjusted transparency to 60% */
-            width: 100%; /* Extends the box outside the image width */
-            max-width: 50%; /* Matches the image width */
+            width: 100%; /* Fits the width of the page */
             height: auto;
             text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: 'Malibu', Sans-Serif; /* Updated to Malibu font */
-            font-size: 24px;
-            font-weight: bold;
+            padding: 20px 0;
+            font-family: 'Snell Roundhand', cursive; /* Updated to Snell Roundhand font */
             color: #000;
-            pointer-events: none; /* Ensures it doesn't block image interactions */
+        }
+        .overlay .line1 {
+            font-size: 26px; /* First line is 10pt smaller */
+        }
+        .overlay .line2 {
+            font-size: 36px;
         }
         .footer-image {
             width: 100%;
@@ -104,7 +104,10 @@
         </ul>
     </nav>
     <div class="main-content">
-        <div class="overlay">The Wedding of Joshua & Emily Teboe</div>
+        <div class="overlay">
+            <div class="line1">The Wedding of</div>
+            <div class="line2">Joshua & Emily Teboe</div>
+        </div>
     </div>
     <img src="images/flowers15.png" alt="Footer Flowers" class="footer-image">
 </body>
