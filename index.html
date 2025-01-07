@@ -1,230 +1,187 @@
+
+
+ChatGPT 4o
+You said:
+
+
+Create an index.html file 
+The attached photo will be the background of the webpage and repeat with a solid HTML color code 35087f behind the image 
+Create a navigation bar in the top with the following tabs - Home, Information, Our Story, Gallery, Q + A, and Registry with white text and the following background color - eea8bf. Text font should be Georgia/ Serif 
+Put a 70% translucent white background behind text.png and have the background match the width of the screen and the height of the image 
+ChatGPT said:
+ChatGPT
+Wedding Webpage
+
+Answer in chat instead
+I've created the index.html file for your webpage based on your requirements. Let me know if you need further customization or adjustments!
+
+
+
+
+
+
+
+
+
+
+
+ChatGPT can make mistakes. Check important info.
+?
+
+Wedding Webpage
+
+
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Wedding of Joshua Teboe and Emily Reyna</title>
+    <title>Wedding Page</title>
     <style>
-        /* General Styles */
-        body, html {
+        body {
             margin: 0;
             padding: 0;
-            font-family: 'Arial', sans-serif;
-            background-color: #FDF8F3; /* Soft white background */
-            color: #3E2F2F; /* Dark brown text */
+            font-family: Georgia, serif;
+            background-color: #35087f;
+            background-image: url('/mnt/data/repeat.png');
+            background-repeat: repeat;
         }
-
-        /* Hero Section */
-        .hero {
-            position: relative;
-            height: 100vh;
-            background: url('scenic-forest-lake.jpg') no-repeat center center/cover;
-        }
-
-        .hero h1 {
-            font-family: 'Cursive', sans-serif;
-            font-size: 48px;
-            color: #FDF8F3;
-            text-align: center;
-            padding-top: 25vh;
-        }
-
-        .hero p {
-            font-family: 'Georgia', serif;
-            font-size: 24px;
-            color: #FDF8F3;
-            text-align: center;
-        }
-
-        /* Sticky Navbar */
-        .navbar {
-            position: sticky;
+        nav {
+            background-color: #eea8bf;
+            padding: 15px 0;
+            position: fixed;
             top: 0;
-            background-color: transparent;
-            transition: background-color 0.3s ease-in-out;
-            padding: 20px;
+            width: 100%;
+            z-index: 10;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+        .main-content {
+            margin-top: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .translucent-box {
+            background: rgba(255, 255, 255, 0.7);
+            width: 100%;
+            max-width: 800px;
             text-align: center;
         }
-
-        .navbar.scrolled {
-            background-color: #3C553C; /* Forest green */
-        }
-
-        .navbar a {
-            text-decoration: none;
-            color: #FDF8F3;
-            font-size: 18px;
-            padding: 10px;
-            transition: color 0.3s ease-in-out;
-        }
-
-        .navbar a:hover {
-            color: #FF8C42; /* Sunset orange */
-        }
-
-        /* Sections */
-        section {
-            padding: 50px 20px;
-        }
-
-        /* Our Story Section */
-        #our-story {
-            display: flex;
-            background-color: #EFE9E5; /* Light wood texture color */
-        }
-
-        #our-story .text {
-            flex: 1;
-            padding: 20px;
-        }
-
-        #our-story h2 {
-            font-family: 'Cursive', sans-serif;
-            font-size: 36px;
-        }
-
-        #our-story p {
-            font-family: 'Arial', sans-serif;
-            font-size: 16px;
-            line-height: 1.5;
-        }
-
-        #our-story .gallery {
-            flex: 1;
-            display: flex;
-            flex-wrap: wrap;
-            padding: 20px;
-        }
-
-        #our-story .gallery img {
+        .translucent-box img {
             width: 100%;
             height: auto;
-            margin-bottom: 10px;
-            border-radius: 8px;
-        }
-
-        /* Event Details Section */
-        #event-details {
-            text-align: center;
-        }
-
-        #event-details h2 {
-            font-family: 'Cursive', sans-serif;
-            font-size: 36px;
-            color: #3E2F2F;
-        }
-
-        #event-details p {
-            font-family: 'Arial', sans-serif;
-            font-size: 18px;
-            color: #3E2F2F;
-        }
-
-        /* Countdown Timer */
-        .countdown {
-            font-size: 24px;
-            font-family: 'Georgia', serif;
-            color: #FF8C42; /* Sunset orange */
-        }
-
-        /* Registry Section */
-        #registry a {
-            text-decoration: none;
-            color: #3E2F2F;
-            font-size: 18px;
-            border: 2px solid #3E2F2F;
-            padding: 10px 20px;
-            transition: all 0.3s ease-in-out;
-        }
-
-        #registry a:hover {
-            background-color: #FF8C42;
-            color: #FDF8F3;
-            border-color: #FF8C42;
         }
     </style>
 </head>
 <body>
-
-    <!-- Hero Section -->
-    <div class="hero">
-        <h1>The Wedding of Joshua Teboe and Emily Reyna</h1>
-        <p>September 12, 2025</p>
-        <p>Centreville, VA</p>
-    </div>
-
-    <!-- Navigation Bar -->
-    <div class="navbar" id="navbar">
-        <a href="#home">Home</a>
-        <a href="#our-story">Our Story</a>
-        <a href="#event-details">Event Details</a>
-        <a href="#registry">Our Registry</a>
-        <a href="#rsvp">RSVP</a>
-    </div>
-
-    <!-- Our Story Section -->
-    <section id="our-story">
-        <div class="text">
-            <h2>Our Story</h2>
-            <p>Joshua and Emily met on a hiking trip in Shenandoah, bonding over their love for nature and adventure...</p>
-            <!-- Add more story text here -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#information">Information</a></li>
+            <li><a href="#our-story">Our Story</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#qa">Q + A</a></li>
+            <li><a href="#registry">Registry</a></li>
+        </ul>
+    </nav>
+    <div class="main-content">
+        <div class="translucent-box">
+            <img src="/mnt/data/Text.png" alt="Wedding Text">
         </div>
-        <div class="gallery">
-            <img src="photo1.jpg" alt="Photo 1">
-            <img src="photo2.jpg" alt="Photo 2">
-            <img src="photo3.jpg" alt="Photo 3">
-        </div>
-    </section>
-
-    <!-- Event Details Section -->
-    <section id="event-details">
-        <h2>Event Details</h2>
-        <p>Date: September 12, 2025</p>
-        <p>Location: Bull Run Regional Park, Centreville, Virginia</p>
-        <p>Dress Code: Outdoor Casual</p>
-        <div class="countdown" id="countdown-timer"></div>
-    </section>
-
-    <!-- Our Registry Section -->
-    <section id="registry">
-        <h2>Our Registry</h2>
-        <p><a href="https://www.honeyfund.com/site/TyingTheTeboes">Visit Our Honeyfund Registry</a></p>
-    </section>
-
-    <!-- RSVP Section -->
-    <section id="rsvp">
-        <!-- You can add your RSVP form here -->
-    </section>
-
-    <script>
-        // Sticky Navbar Effect
-        window.onscroll = function() {
-            const navbar = document.getElementById('navbar');
-            if (window.pageYOffset > 100) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        };
-
-        // Countdown Timer
-        function countdown() {
-            const weddingDate = new Date('September 12, 2025 00:00:00').getTime();
-            const now = new Date().getTime();
-            const difference = weddingDate - now;
-
-            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
-
-            document.getElementById('countdown-timer').innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-
-            if (difference < 0) {
-                document.getElementById('countdown-timer').innerHTML = "The wedding has started!";
-            }
-        }
-        setInterval(countdown, 1000);
-    </script>
+    </div>
 </body>
 </html>
+
+ChatGPT says: I've created the `index.html` file for your webpage based on your requirements. Let me know if you need further customization or adjustments!
