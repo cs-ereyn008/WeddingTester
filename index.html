@@ -6,6 +6,8 @@
     <title>Wedding Page</title>
     <link rel="icon" href="images/LogoInBlack.png" type="image/png">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Malibu&display=swap');
+
         body {
             margin: 0;
             padding: 0;
@@ -50,7 +52,7 @@
             font-family: Georgia, serif;
         }
         .main-content {
-            margin-top: 0; /* Ensures proper positioning after logo and navbar */
+            margin-top: 80px; /* Push content below the navbar */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -64,19 +66,16 @@
             display: block;
         }
         .overlay {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
+            position: relative;
             background: rgba(255, 255, 255, 0.6); /* Adjusted transparency to 60% */
             width: 100%; /* Extends the box outside the image width */
             max-width: 50%; /* Matches the image width */
-            height: 100%; /* Matches the height of the image */
+            height: auto;
             text-align: center;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-family: Sans-Serif;
+            font-family: 'Malibu', Sans-Serif; /* Updated to Malibu font */
             font-size: 24px;
             font-weight: bold;
             color: #000;
