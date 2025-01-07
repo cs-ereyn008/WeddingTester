@@ -16,10 +16,10 @@
             text-align: center;
             background-color: #f7ddbb;
             padding: 10px 0;
-            position: fixed;
+            position: relative;
             top: 0;
             width: 100%;
-            z-index: 20; /* Ensures logo stays on top of navbar */
+            z-index: 20; /* Ensures logo stays above other elements */
         }
         .logo img {
             width: 100px;
@@ -28,9 +28,10 @@
         nav {
             background-color: #f7ddbb;
             padding: 15px 0;
-            position: static; /* Makes navbar static */
+            position: relative; /* Navbar is now placed below the logo */
             width: 100%;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+            z-index: 10;
         }
         nav ul {
             list-style-type: none;
@@ -49,7 +50,7 @@
             font-family: Georgia, serif;
         }
         .main-content {
-            margin-top: 100px; /* Adjusted for logo */
+            margin-top: 0; /* Ensures proper positioning after logo and navbar */
             display: flex;
             justify-content: center;
             align-items: flex-start;
