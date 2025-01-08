@@ -77,18 +77,25 @@
             padding: 20px;
             width: 100%;
             box-sizing: border-box;
+            position: relative;
+            z-index: 10;
         }
         .background-images {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
             display: flex;
             justify-content: center;
-            width: 100%;
-            position: relative;
-            z-index: 0;
-            margin-bottom: 20px;
+            align-items: center;
+            pointer-events: none;
         }
         .background-images img {
-            width: 300px;
+            width: 600px;
             height: auto;
+            opacity: 0.3;
         }
         .gallery {
             text-align: center;
@@ -121,15 +128,15 @@
     <!-- Our Story Section -->
     <section id="our-story">
         <h2>Our Story</h2>
+        <div class="background-images">
+            <img src="images/campsite2.png" alt="Campsite">
+        </div>
         <div class="content">
             <p>Emily first saw Joshua at the NOVA Manassas Campus bookstore, where he worked, and she was working for campus IT. For Emily, it was love at first sight. Nicknamed the "cute bookstore guy" by her family, Joshua unknowingly began to play a special role in her life.</p>
             <p>Emily's first words to Joshua were, "How difficult can I be?" and in that moment, Joshua knew she would be a handful. Yet, it only made him more intrigued by her bold and playful personality.</p>
             <p>During the COVID pandemic, despite masks and work windows separating them, their friendship blossomed. Through funny faces, brief passing conversations, and even shared moments behind the glass, they grew closer.</p>
             <p>Their unique connection led to countless lunch "dates" to the grocery store, late-night snack runs, and notes scribbled on coffee cups. Finally, on January 19th, 2022, Joshua asked Emily out, and the rest, as they say, is history.</p>
             <p>After talking and dating for over a year, Emily and Joshua took the next big step in their journey, moving in together in late October 2022. Since then, they've filled their home with love—and quite a few furry (and scaly) companions! They've welcomed three cats, Moose, Benny, and Moony, along with two tortoises, Raph (Joshua's first baby) and Peanut, as well as their leopard gecko, Casper.</p>
-        </div>
-        <div class="background-images">
-            <img src="images/campsite2.png" alt="Campsite">
         </div>
         <div class="gallery">
             <img id="slide" src="images/EmmieJosh1.jpg" alt="Photo 1">
