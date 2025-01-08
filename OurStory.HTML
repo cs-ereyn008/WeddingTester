@@ -69,26 +69,25 @@
             text-align: center;
             position: relative;
         }
-        #our-story h2::before {
+        #our-story h2::before,
+        #our-story h2::after {
             content: '';
             display: inline-block;
+            position: absolute;
+            top: 0;
+        }
+        #our-story h2::before {
             background: url('images/pinetrees2.png') no-repeat center;
             background-size: contain;
             width: 100px;
             height: 150px;
-            position: absolute;
-            top: 0;
             left: -110px;
         }
         #our-story h2::after {
-            content: '';
-            display: inline-block;
             background: url('images/campsite2.png') no-repeat center;
             background-size: contain;
             width: 100px;
             height: 100px;
-            position: absolute;
-            top: 0;
             right: -110px;
         }
         #our-story .content {
@@ -104,12 +103,14 @@
             z-index: 10;
         }
         .gallery {
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
             margin-top: 20px;
         }
         .gallery img {
-            width: 80%;
-            max-width: 500px;
+            width: 300px; /* Fixed width to maintain consistency */
             height: auto;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -158,4 +159,24 @@
             'images/EmmieJosh8.jpg',
             'images/EmmieJosh9.jpg',
             'images/EmmieJosh10.jpg',
-            'images/EmmieJosh
+            'images/EmmieJosh11.jpg',
+            'images/EmmieJosh12.jpg',
+            'images/EmmieJosh13.jpg',
+            'images/EmmieJosh14.jpg',
+            'images/EmmieJosh15.jpg',
+            'images/EmmieJosh16.jpg'
+        ];
+
+        let currentIndex = 0;
+
+        function changeImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            const imageElement = document.getElementById('slide');
+            imageElement.src = images[currentIndex];
+            imageElement.alt = `Photo ${currentIndex + 1}`;
+        }
+
+        setInterval(changeImage, 5000);
+    </script>
+</body>
+</html>
