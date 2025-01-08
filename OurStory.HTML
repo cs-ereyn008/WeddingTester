@@ -82,9 +82,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         .background-images {
-            position: absolute;
-            bottom: 0;
-            right: 0;
+            position: relative;
             z-index: 0; /* Place images behind the content */
         }
         .background-images img {
@@ -97,7 +95,7 @@
         }
         .background-images .pinetree {
             bottom: 0;
-            left: 20px;
+            left: 0;
             width: 150px;
         }
     </style>
@@ -128,12 +126,11 @@
         <div class="gallery">
             <img id="slide" src='images/EmmieJosh1.jpg' alt="Photo 1">
         </div>
+        <div class="background-images">
+            <img src="images/campsite2.png" alt="Campsite" class="campsite" style="bottom: 0; right: 0;">
+            <img src="images/pinetree2.png" alt="Pine Tree" class="pinetree" style="bottom: 0; left: 0;">
+        </div>
     </section>
-
-    <div class="background-images">
-        <img src="images/campsite2.png" alt="Campsite" class="campsite">
-        <img src="images/pinetree2.png" alt="Pine Tree" class="pinetree">
-    </div>
 
     <script>
         const images = [
