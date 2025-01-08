@@ -24,7 +24,7 @@
             position: relative;
             top: 0;
             width: 100%;
-            z-index: 20; /* Ensures logo stays above other elements */
+            z-index: 20;
         }
         .logo img {
             width: 100px;
@@ -33,7 +33,7 @@
         nav {
             background-color: #f7ddbb;
             padding: 15px 0;
-            position: relative; /* Navbar is now placed below the logo */
+            position: relative;
             width: 100%;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
             z-index: 10;
@@ -57,7 +57,7 @@
         section {
             padding: 20px;
             position: relative;
-            z-index: 5; /* Place body content above background images */
+            z-index: 5;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -85,17 +85,17 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 100%;
+            height: auto;
             z-index: 1;
             display: flex;
             justify-content: center;
-            align-items: center;
             pointer-events: none;
         }
         .background-images img {
-            width: 600px;
+            width: 100%;
+            max-width: 800px;
             height: auto;
-            opacity: 0.3;
+            opacity: 1;
         }
         .gallery {
             text-align: center;
@@ -127,10 +127,10 @@
 
     <!-- Our Story Section -->
     <section id="our-story">
-        <h2>Our Story</h2>
         <div class="background-images">
             <img src="images/campsite2.png" alt="Campsite">
         </div>
+        <h2>Our Story</h2>
         <div class="content">
             <p>Emily first saw Joshua at the NOVA Manassas Campus bookstore, where he worked, and she was working for campus IT. For Emily, it was love at first sight. Nicknamed the "cute bookstore guy" by her family, Joshua unknowingly began to play a special role in her life.</p>
             <p>Emily's first words to Joshua were, "How difficult can I be?" and in that moment, Joshua knew she would be a handful. Yet, it only made him more intrigued by her bold and playful personality.</p>
