@@ -59,35 +59,42 @@
             position: relative;
             z-index: 5; /* Place body content above background images */
             display: flex;
-            justify-content: center;
-            align-items: flex-start;
+            flex-direction: column;
+            align-items: center;
             gap: 20px;
         }
         #our-story h2 {
             font-family: 'Love Script', cursive;
             font-size: 42px;
             text-align: center;
-            flex-basis: 100%;
         }
         #our-story .content {
             font-family: Georgia, serif;
-            text-align: center;
+            text-align: justify;
             margin: 10px auto;
             max-width: 800px;
-            flex: 1;
+            position: relative;
         }
         .background-images {
             display: flex;
             justify-content: space-between;
             width: 100%;
             position: absolute;
-            top: 20%;
-            pointer-events: none;
+            top: 50px;
             z-index: 0;
         }
         .background-images img {
             width: 150px;
             height: auto;
+            position: absolute;
+        }
+        .background-images .pinetree {
+            left: 0;
+            top: 100px;
+        }
+        .background-images .campsite {
+            right: 0;
+            top: 100px;
         }
     </style>
 </head>
@@ -110,8 +117,8 @@
     <section id="our-story">
         <h2>Our Story</h2>
         <div class="background-images">
-            <img src="images/pinetrees2.png" alt="Pine Tree">
-            <img src="images/campsite2.png" alt="Campsite">
+            <img src="images/pinetrees2.png" alt="Pine Tree" class="pinetree">
+            <img src="images/campsite2.png" alt="Campsite" class="campsite">
         </div>
         <div class="content">
             <p>Emily first saw Joshua at the NOVA Manassas Campus bookstore, where he worked, and she was working for campus IT. For Emily, it was love at first sight. Nicknamed the "cute bookstore guy" by her family, Joshua unknowingly began to play a special role in her life.</p>
