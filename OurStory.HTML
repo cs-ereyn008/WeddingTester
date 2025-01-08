@@ -82,20 +82,22 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         .background-images {
-            position: relative;
+            position: absolute;
             z-index: 0; /* Place images behind the content */
         }
         .background-images img {
             position: absolute;
         }
         .background-images .campsite {
-            top: 0;
-            right: 0;
+            top: 50%;
+            right: 10%;
+            transform: translateY(-50%);
             width: 150px;
         }
         .background-images .pinetree {
-            top: 0;
-            left: 0;
+            top: 50%;
+            left: 10%;
+            transform: translateY(-50%);
             width: 150px;
         }
     </style>
@@ -127,8 +129,8 @@
             <img id="slide" src='images/EmmieJosh1.jpg' alt="Photo 1">
         </div>
         <div class="background-images">
-            <img src="images/campsite2.png" alt="Campsite" class="campsite" style="top: 0; right: 0;">
-            <img src="images/pinetrees2.png" alt="Pine Tree" class="pinetree" style="top: 0; left: 0;">
+            <img src="images/campsite2.png" alt="Campsite" class="campsite">
+            <img src="images/pinetrees2.png" alt="Pine Tree" class="pinetree">
         </div>
     </section>
 
