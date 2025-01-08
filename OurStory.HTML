@@ -69,16 +69,27 @@
             text-align: center;
             position: relative;
         }
+        #our-story h2::before {
+            content: '';
+            display: inline-block;
+            background: url('images/pinetrees2.png') no-repeat center;
+            background-size: contain;
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top: 0;
+            left: -70px;
+        }
         #our-story h2::after {
             content: '';
             display: inline-block;
             background: url('images/campsite2.png') no-repeat center;
             background-size: contain;
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
             position: absolute;
             top: 0;
-            right: -60px;
+            right: -70px;
         }
         #our-story .content {
             font-family: Georgia, serif;
@@ -147,24 +158,4 @@
             'images/EmmieJosh8.jpg',
             'images/EmmieJosh9.jpg',
             'images/EmmieJosh10.jpg',
-            'images/EmmieJosh11.jpg',
-            'images/EmmieJosh12.jpg',
-            'images/EmmieJosh13.jpg',
-            'images/EmmieJosh14.jpg',
-            'images/EmmieJosh15.jpg',
-            'images/EmmieJosh16.jpg'
-        ];
-
-        let currentIndex = 0;
-
-        function changeImage() {
-            currentIndex = (currentIndex + 1) % images.length;
-            const imageElement = document.getElementById('slide');
-            imageElement.src = images[currentIndex];
-            imageElement.alt = `Photo ${currentIndex + 1}`;
-        }
-
-        setInterval(changeImage, 5000);
-    </script>
-</body>
-</html>
+            'images/EmmieJosh
