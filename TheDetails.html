@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Information</title>
+    <title>The Details</title>
     <link rel="icon" href="images/LogoInBlack.png" type="image/png">
     <style>
         @font-face {
@@ -23,7 +23,7 @@
             position: relative;
             top: 0;
             width: 100%;
-            z-index: 20; /* Ensures logo stays above other elements */
+            z-index: 20;
         }
         .logo img {
             width: 100px;
@@ -32,7 +32,7 @@
         nav {
             background-color: #f7ddbb;
             padding: 15px 0;
-            position: relative; /* Navbar is now placed below the logo */
+            position: relative;
             width: 100%;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
             z-index: 10;
@@ -53,6 +53,23 @@
             font-size: 18px;
             font-family: Georgia, serif;
         }
+        .title {
+            text-align: center;
+            font-family: 'Love Script', cursive;
+            font-size: 65px;
+            margin-top: 20px;
+        }
+        .timeline {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        .timeline img {
+            max-width: 90%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
     </style>
 </head>
 <body>
@@ -62,12 +79,18 @@
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="Information.html">Information</a></li>
+            <li><a href="TheDetails.html">The Details</a></li>
             <li><a href="OurStory.HTML">Our Story</a></li>
             <li><a href="Gallery.html">Gallery</a></li>
             <li><a href="QA.html">Q + A</a></li>
             <li><a href="Registry.html">Registry</a></li>
         </ul>
     </nav>
+
+    <h1 class="title">The Details</h1>
+
+    <div class="timeline">
+        <img src="images/Timeline.png" alt="Wedding Timeline">
+    </div>
 </body>
 </html>
