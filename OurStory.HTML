@@ -110,7 +110,7 @@
             color: #361c54;
             padding: 20px;
             border-radius: 10px;
-            width: 300px;
+            width: 350px;
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             font-family: Georgia, serif;
@@ -157,10 +157,10 @@
     <section id="fun-facts">
         <h2>Fun Facts</h2>
         <div class="facts">
-            <div class="fact" onclick="toggleFact(this, 'Who made the first move?', 'Emily actually the first move! ')">Who made the first move?</div>
-            <div class="fact" onclick="toggleFact(this, 'Who said \"I love you\" first?', 'Joshua accidentally said when saying our goodbyes as I was leaving one evening.')">Who said 'I love you' first?</div>
-            <div class="fact" onclick="toggleFact(this, 'Where did the proposal happen?', 'After opening presents on Christmas Eve, Josh commented having one more present. He propsed in front of our Christmas tree on Christmas eve. ')">Where did the proposal happen?</div>
-            <div class="fact" onclick="toggleFact(this, 'Where are you going for your honeymoon?', 'We are headed to the nearby mountains for a couple days of rest and relaxation')">Where are you going for your honeymoon?</div>
+            <div class="fact" onclick="toggleFact(this, 'Who made the first move?', 'Emily actually made the first move!')">Who made the first move?</div>
+            <div class="fact" onclick="toggleFact(this, 'Who said \"I love you\" first?', 'Joshua accidentally said it while saying our goodbyes as I was leaving one evening.')">Who said 'I love you' first?</div>
+            <div class="fact" onclick="toggleFact(this, 'Where did the proposal happen?', 'After opening presents on Christmas Eve, Josh commented he had one more present. He proposed in front of our Christmas tree on Christmas Eve.')">Where did the proposal happen?</div>
+            <div class="fact" onclick="toggleFact(this, 'Where are you going for your honeymoon?', 'We are headed to the nearby mountains for a couple days of rest and relaxation.')">Where are you going for your honeymoon?</div>
             <div class="fact" onclick="toggleFact(this, 'Where was your first date?', 'Our first date was to the Cinemark to watch DnD for 5 hours and have snacks.')">Where was your first date?</div>
         </div>
     </section>
@@ -191,14 +191,3 @@
             currentIndex = (currentIndex + 1) % images.length;
             const imageElement = document.getElementById('slide');
             imageElement.src = images[currentIndex];
-            imageElement.alt = `Photo ${currentIndex + 1}`;
-        }
-
-        setInterval(changeImage, 5000);
-
-        function toggleFact(element, question, answer) {
-            element.textContent = element.textContent === question ? answer : question;
-        }
-    </script>
-</body>
-</html>
