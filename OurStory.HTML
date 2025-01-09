@@ -63,45 +63,56 @@
             align-items: center;
             gap: 20px;
         }
-        #our-story h2 {
-            font-family: 'Love Script', cursive;
-            font-size: 42px;
+        #our-story {
             display: flex;
-            align-items: center;
             justify-content: center;
-            gap: 20px; /* Space between the text and images */
-            margin: 0 auto;
-            text-align: center;
+            gap: 20px;
+            padding: 40px;
         }
-        
-        #our-story h2 img {
-            width: 100px; /* Adjust width as needed */
-            height: auto; /* Maintain aspect ratio */
-        }
-
-        #our-story .content {
+        #our-story .left-column {
+            width: 50%;
             font-family: Georgia, serif;
             text-align: justify;
-            margin: 10px auto;
-            max-width: 800px;
             background: rgba(255, 255, 255, 0.6);
             padding: 20px;
-            width: 100%;
             box-sizing: border-box;
-            position: relative;
-            z-index: 10;
         }
-        .gallery {
+        #our-story .right-column {
+            width: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 20px;
-            margin-top: 20px;
         }
-        .gallery img {
-            width: 300px; /* Fixed width to maintain consistency */
+        #our-story .right-column img {
+            width: 100%;
+            max-width: 400px;
             height: auto;
             border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        #fun-facts {
+            background-color: #2b1451;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        #fun-facts h2 {
+            font-family: 'Love Script', cursive;
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+        #fun-facts .facts {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        #fun-facts .fact {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
     </style>
@@ -122,21 +133,28 @@
     </nav>
 
     <!-- Our Story Section -->
-<section id="our-story">
-    <h2>
-        <img src="images/pinetrees2.png" alt="Pine Trees">
-        Our Story
-        <img src="images/campsite2.png" alt="Campsite">
-    </h2>
-    <div class="content">
+    <section id="our-story">
+        <div class="left-column">
             <p>Emily first saw Joshua at the NOVA Manassas Campus bookstore, where he worked, and she was working for campus IT. For Emily, it was love at first sight. Nicknamed the "cute bookstore guy" by her family, Joshua unknowingly began to play a special role in her life.</p>
             <p>Emily's first words to Joshua were, "How difficult can I be?" and in that moment, Joshua knew she would be a handful. Yet, it only made him more intrigued by her bold and playful personality.</p>
             <p>During the COVID pandemic, despite masks and work windows separating them, their friendship blossomed. Through funny faces, brief passing conversations, and even shared moments behind the glass, they grew closer.</p>
             <p>Their unique connection led to countless lunch "dates" to the grocery store, late-night snack runs, and notes scribbled on coffee cups. Finally, on January 19th, 2022, Joshua asked Emily out, and the rest, as they say, is history.</p>
             <p>After talking and dating for over a year, Emily and Joshua took the next big step in their journey, moving in together in late October 2022. Since then, they've filled their home with love—and quite a few furry (and scaly) companions! They've welcomed three cats, Moose, Benny, and Moony, along with two tortoises, Raph (Joshua's first baby) and Peanut, as well as their leopard gecko, Casper.</p>
         </div>
-        <div class="gallery">
+        <div class="right-column">
             <img id="slide" src="images/EmmieJosh1.jpg" alt="Photo 1">
+        </div>
+    </section>
+
+    <!-- Fun Facts Section -->
+    <section id="fun-facts">
+        <h2>Fun Facts</h2>
+        <div class="facts">
+            <div class="fact">Joshua proposed during a trip to the mountains!</div>
+            <div class="fact">Emily's favorite coffee order is a caramel latte.</div>
+            <div class="fact">Their cats are named Moose, Benny, and Moony.</div>
+            <div class="fact">Joshua's favorite hobby is hiking.</div>
+            <div class="fact">Emily loves baking desserts!</div>
         </div>
     </section>
 
