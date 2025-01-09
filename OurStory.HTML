@@ -191,3 +191,15 @@
             currentIndex = (currentIndex + 1) % images.length;
             const imageElement = document.getElementById('slide');
             imageElement.src = images[currentIndex];
+            imageElement.alt = `Photo ${currentIndex + 1}`;
+        }
+
+        setInterval(changeImage, 5000);
+
+        function toggleFact(element, question, answer) {
+            element.textContent = element.textContent === question ? answer : question;
+        }
+    </script>
+</body>
+</html>
+
