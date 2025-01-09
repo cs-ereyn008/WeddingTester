@@ -54,50 +54,43 @@
             font-size: 18px;
             font-family: Georgia, serif;
         }
-        section {
-            padding: 20px;
-            position: relative;
-            z-index: 5;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-        }
         #our-story {
             padding: 40px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            display: flex;
             gap: 20px;
-            align-items: start;
+            align-items: flex-start;
         }
         #our-story h2 {
-            grid-column: span 2;
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            text-align: center;
             font-family: 'Love Script', cursive;
             font-size: 42px;
-            text-align: center;
         }
         #our-story .left-column {
             font-family: Georgia, serif;
             text-align: justify;
             background: rgba(255, 255, 255, 0.6);
             padding: 20px;
+            width: 50%;
             box-sizing: border-box;
         }
         #our-story .right-column {
             display: flex;
             justify-content: center;
             align-items: center;
+            width: 50%;
         }
         #our-story .right-column img {
-            width: 100%;
-            max-width: 400px;
+            max-width: 100%;
             height: auto;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         #fun-facts {
-            background-color: #2b1451;
-            color: white;
+            background-color: #d1c3b8;
+            color: #361c54;
             padding: 40px;
             text-align: center;
         }
@@ -113,12 +106,20 @@
             gap: 20px;
         }
         #fun-facts .fact {
-            background: rgba(255, 255, 255, 0.1);
+            background: #e7d3bf;
+            color: #361c54;
             padding: 20px;
             border-radius: 10px;
             width: 300px;
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-family: Georgia, serif;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        #fun-facts .fact:hover {
+            transform: scale(1.05);
+            background-color: #bf8a8a;
         }
     </style>
 </head>
@@ -156,11 +157,11 @@
     <section id="fun-facts">
         <h2>Fun Facts</h2>
         <div class="facts">
-            <div class="fact">Joshua proposed during a trip to the mountains!</div>
-            <div class="fact">Emily's favorite coffee order is a caramel latte.</div>
-            <div class="fact">Their cats are named Moose, Benny, and Moony.</div>
-            <div class="fact">Joshua's favorite hobby is hiking.</div>
-            <div class="fact">Emily loves baking desserts!</div>
+            <div class="fact" onclick="toggleFact(this, 'Who made the first move?', 'Emily actually the first move! ')">Who made the first move?</div>
+            <div class="fact" onclick="toggleFact(this, 'Who said \"I love you\" first?', 'Joshua accidentally said when saying our goodbyes as I was leaving one evening.')">Who said 'I love you' first?</div>
+            <div class="fact" onclick="toggleFact(this, 'Where did the proposal happen?', 'After opening presents on Christmas Eve, Josh commented having one more present. He propsed in front of our Christmas tree on Christmas eve. ')">Where did the proposal happen?</div>
+            <div class="fact" onclick="toggleFact(this, 'Where are you going for your honeymoon?', 'We are headed to the nearby mountains for a couple days of rest and relaxation')">Where are you going for your honeymoon?</div>
+            <div class="fact" onclick="toggleFact(this, 'Where was your first date?', 'Our first date was to the Cinemark to watch DnD for 5 hours and have snacks.')">Where was your first date?</div>
         </div>
     </section>
 
@@ -194,6 +195,10 @@
         }
 
         setInterval(changeImage, 5000);
+
+        function toggleFact(element, question, answer) {
+            element.textContent = element.textContent === question ? answer : question;
+        }
     </script>
 </body>
 </html>
