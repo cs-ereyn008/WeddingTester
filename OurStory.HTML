@@ -70,6 +70,7 @@
         }
         #our-story .left-column {
             font-family: Georgia, serif;
+            font-size: 18px;
             text-align: justify;
             background: rgba(255, 255, 255, 0.6);
             padding: 20px;
@@ -88,17 +89,12 @@
             justify-content: center;
             align-items: center;
             width: 50%;
-            overflow: hidden;
-            height: 300px;
-            position: relative;
         }
         #our-story .right-column img {
-            max-width: none;
+            max-width: 100%;
             height: auto;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         #fun-facts {
             background-color: #d1c3b8;
@@ -207,15 +203,4 @@
         function changeImage() {
             currentIndex = (currentIndex + 1) % images.length;
             const imageElement = document.getElementById('slide');
-            imageElement.src = images[currentIndex];
-            imageElement.alt = `Photo ${currentIndex + 1}`;
-        }
-
-        setInterval(changeImage, 5000);
-
-        function toggleFact(element, question, answer) {
-            element.textContent = element.textContent === question ? answer : question;
-        }
-    </script>
-</body>
-</html>
+            imageElement
