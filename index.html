@@ -3,17 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding Page</title>
+    <title>The Details</title>
     <link rel="icon" href="images/LogoInBlack.png" type="image/png">
     <style>
         @font-face {
             font-family: 'Love Script';
             src: url('Love script.ttf') format('truetype');
         }
+        @font-face {
+            font-family: 'Roadster';
+            src: url('roadster-free.regular.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'Kingstyle';
+            src: url('Kingstyle.ttf') format('truetype');
+        }
         body {
             margin: 0;
             padding: 0;
-            font-family: "Brush Script MT", cursive;
+            font-family: Georgia, serif;
             background-color: #ffeee2;
         }
         .logo {
@@ -23,7 +31,7 @@
             position: relative;
             top: 0;
             width: 100%;
-            z-index: 20; /* Ensures logo stays above other elements */
+            z-index: 20;
         }
         .logo img {
             width: 100px;
@@ -32,7 +40,7 @@
         nav {
             background-color: #f7ddbb;
             padding: 15px 0;
-            position: relative; /* Navbar is now placed below the logo */
+            position: relative;
             width: 100%;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
             z-index: 10;
@@ -53,63 +61,53 @@
             font-size: 18px;
             font-family: Georgia, serif;
         }
-        .main-content {
-            margin-top: 80px; /* Push content below the navbar */
+        .title {
+            text-align: center;
+            font-family: 'Love Script', cursive;
+            font-size: 65px;
+            margin-top: 20px;
+        }
+        .details-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 40px;
+        }
+        .text-box {
+            width: 45%;
+            background: rgba(255, 255, 255, 0);
+            padding: 20px;
+            position: relative;
+        }
+        .text-box h2 {
+            font-size: 28px;
+            font-family: 'Roadster', sans-serif;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .text-box p {
+            font-size: 20px;
+            font-family: 'Kingstyle', serif;
+            margin-bottom: 20px;
+        }
+        .text-box p span {
+            font-weight: bold;
+        }
+        .timeline {
+            width: 45%;
             display: flex;
             justify-content: center;
-            align-items: center;
-            position: relative;
-            flex-direction: column;
-            width: 100%;
         }
-        .main-content .overlay {
-            font-family: 'Love Script', cursive; /* Apply Love Script font */
-            text-align: center;
-            padding: 15px;
-            width: 100%;
-            margin-top: 50px; /* Move the text down slightly */
-            position: relative;
-            z-index: 5; /* Ensure it overlays the image */
+        .timeline img {
+            max-width: 100%;
+            height: auto;
         }
-        .main-content .line1 {
-            font-size: 58px; /* First line font size */
-        }
-        .main-content .line2 {
-            font-size: 82px; /* Second line font size */
-        }
-        .main-content .date {
-            font-family: Georgia, serif;
-            font-size: 32px;
-            margin-top: 15px;
-            color: #000;
-        }
-        .main-content .location {
-            font-family: Georgia, serif;
-            font-size: 25px;
-            margin-top: 5px;
-            color: #000;
-        }
-        .main-content .rsvp-button {
-            margin-top: 20px;
-            background-color: #321660;
-            color: white;
-            font-size: 18px;
-            font-family: Georgia, serif;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .main-content .rsvp-button:hover {
-            background-color: #421d7e;
-        }
-        .footer-image {
-            width: 100%;
+        .text-box .campsite {
             display: block;
-            position: relative;
-            bottom: 0;
-            margin-top: -50px; /* Ensure slight overlap with the text */
-            z-index: 0; /* Ensure it is below the text */
+            margin: 20px auto 0;
+            width: 100%;
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
@@ -127,15 +125,32 @@
             <li><a href="https://www.honeyfund.com/site/TyingTheTeboes">Registry</a></li>
         </ul>
     </nav>
-    <div class="main-content">
-        <div class="overlay">
-            <div class="line1">The Wedding of</div>
-            <div class="line2">Joshua & Emily Teboe</div>
-            <div class="date">September 19th, 2025</div>
-            <div class="location">Centreville, VA</div>
-            <button class="rsvp-button">RSVP</button>
+
+    <h1 class="title">The Details</h1>
+
+    <div class="details-container">
+        <div class="text-box">
+            <h2>Arrival and Parking</h2>
+            <p>If you are attending in person, please bring your invitation or mention you are here for the Teboe wedding at the gatehouse entrance.</p>
+            <p>Two large parking areas, circled on the park map below, are available for your convenience. The path from the parking lot to the ceremony site is relatively short but involves rough terrain, including gravel and grass. Please wear appropriate footwear, and let us know in advance if you require on-site transportation assistance.</p>
+
+            <h2>Ceremony & Reception</h2>
+            <p>The ceremony will take place outdoors, rain or shine. Handheld fans will be provided during the ceremony, and electric fans will be available at the reception to keep you cool.</p>
+            <p>Join us afterward for drinks, dinner, and celebration! Both the ceremony and reception will be held outdoors, with minimal cover at the ceremony site. Please prepare for weather conditions like rain or sun. All events are within walking distance of each other at Bull Run Regional Park. Transportation assistance, such as utility carts, can be available for guests who may need it. Please notify us beforehand.</p>
+
+            <h2>Attire</h2>
+            <p>Outdoor Casual – Embrace the camp vibes with flannels, jeans, and "classy camping" attire. Think rustic elegance combined with comfort.</p>
+            <p>We recommend flat or sturdy shoes, such as boots, wedges, or sandals, as the terrain consists of gravel paths and grassy areas. Thin heels or stilettos may not be ideal for the outdoor setting.</p>
+
+            <h2>RSVP</h2>
+            <p>Please RSVP by <span>August 1st</span> at the latest!</p>
+
+            <img src="images/campsite.png" alt="Campsite Illustration" class="campsite">
+        </div>
+
+        <div class="timeline">
+            <img src="images/Timeline.png" alt="Wedding Timeline">
         </div>
     </div>
-    <img src="images/flowers15.png" alt="Footer Flowers" class="footer-image">
 </body>
 </html>
