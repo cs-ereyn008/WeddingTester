@@ -65,6 +65,7 @@
             background-size: cover; /* Adjust image size */
             background-position: center; /* Center the image */
             background-repeat: no-repeat; /* Prevent repeating */
+            min-height: 100vh; /* Ensure it covers the entire viewport */
         }
         .main-content .overlay {
             font-family: 'Love Script', cursive; /* Apply Love Script font */
@@ -115,6 +116,12 @@
             margin-top: -50px; /* Ensure slight overlap with the text */
             z-index: 0; /* Ensure it is below the text */
         }
+        .main-content .rsvp-text {
+            font-size: small;
+            font-weight: bold;
+            margin-top: 10px;
+            font-family: Georgia, serif; /* Apply Georgia font */
+        }
     </style>
 </head>
 <body>
@@ -138,7 +145,7 @@
             <div class="date">September 12th, 2025</div>
             <div class="location">Centreville, VA</div>
             <button class="rsvp-button">RSVP</button>
-            <div style="font-size: small; font-weight: bold; margin-top: 10px;">
+            <div class="rsvp-text">
                 Please RSVP by August 1st!
             </div>
         </div>
