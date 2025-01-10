@@ -61,6 +61,10 @@
             position: relative;
             flex-direction: column;
             width: 100%;
+            background-image: url('images/flowers15.png'); /* Set background image */
+            background-size: cover; /* Adjust image size */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Prevent repeating */
         }
         .main-content .overlay {
             font-family: 'Love Script', cursive; /* Apply Love Script font */
@@ -69,7 +73,7 @@
             width: 100%;
             margin-top: 50px; /* Move the text down slightly */
             position: relative;
-            z-index: 5; /* Ensure it overlays the image */
+            z-index: 1; /* Ensure text overlays the background image */
         }
         .main-content .line1 {
             font-size: 58px; /* First line font size */
@@ -131,9 +135,12 @@
         <div class="overlay">
             <div class="line1">The Wedding of</div>
             <div class="line2">Joshua & Emily Teboe</div>
-            <div class="date">September 19th, 2025</div>
+            <div class="date">September 12th, 2025</div>
             <div class="location">Centreville, VA</div>
             <button class="rsvp-button">RSVP</button>
+            <div style="font-size: small; font-weight: bold; margin-top: 10px;">
+                Please RSVP by August 1st!
+            </div>
         </div>
     </div>
     <img src="images/flowers15.png" alt="Footer Flowers" class="footer-image">
