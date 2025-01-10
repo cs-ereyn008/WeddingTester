@@ -110,11 +110,16 @@
         }
         .footer-image {
             width: 100%;
-            height: auto; /* Maintain aspect ratio */
             display: block;
             position: relative;
+            bottom: 0;
             margin-top: 20px; /* Add spacing above the footer image */
             z-index: 0; /* Ensure it is below the text */
+            background-image: url('images/flowers15.png'); /* Use as background */
+            background-repeat: no-repeat; /* Ensure it does not repeat */
+            background-size: contain; /* Contain image within its container */
+            background-position: center; /* Center the image */
+            height: 200px; /* Set specific height */
         }
         .main-content .rsvp-text {
             font-size: small;
@@ -150,6 +155,6 @@
             </div>
         </div>
     </div>
-    <img src="images/flowers15.png" alt="Footer Flowers" class="footer-image">
+    <div class="footer-image"></div>
 </body>
 </html>
