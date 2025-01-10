@@ -23,7 +23,7 @@
             position: relative;
             top: 0;
             width: 100%;
-            z-index: 20; /* Ensures logo stays above other elements */
+            z-index: 20;
         }
         .logo img {
             width: 100px;
@@ -32,7 +32,7 @@
         nav {
             background-color: #f7ddbb;
             padding: 15px 0;
-            position: relative; /* Navbar is now placed below the logo */
+            position: relative;
             width: 100%;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
             z-index: 10;
@@ -54,33 +54,33 @@
             font-family: Georgia, serif;
         }
         .main-content {
-            margin-top: 80px; /* Push content below the navbar */
+            margin-top: 80px;
             display: flex;
             justify-content: center;
             align-items: center;
             position: relative;
             flex-direction: column;
             width: 100%;
-            background-image: url('images/flowers15.png'); /* Set background image */
-            background-size: cover; /* Adjust image size */
-            background-position: center; /* Center the image */
-            background-repeat: no-repeat; /* Prevent repeating */
-            min-height: 100vh; /* Ensure it covers the entire viewport */
+            background-image: url('images/flowers15.png');
+            background-size: cover;
+            background-position: top center;
+            background-repeat: no-repeat; /* Ensure the image does not repeat */
+            min-height: 100vh;
         }
         .main-content .overlay {
-            font-family: 'Love Script', cursive; /* Apply Love Script font */
+            font-family: 'Love Script', cursive;
             text-align: center;
             padding: 15px;
             width: 100%;
-            margin-top: 50px; /* Move the text down slightly */
+            margin-top: 50px;
             position: relative;
-            z-index: 1; /* Ensure text overlays the background image */
+            z-index: 1;
         }
         .main-content .line1 {
-            font-size: 58px; /* First line font size */
+            font-size: 58px;
         }
         .main-content .line2 {
-            font-size: 82px; /* Second line font size */
+            font-size: 82px;
         }
         .main-content .date {
             font-family: Georgia, serif;
@@ -108,24 +108,11 @@
         .main-content .rsvp-button:hover {
             background-color: #421d7e;
         }
-        .footer-image {
-            width: 100%;
-            display: block;
-            position: relative;
-            bottom: 0;
-            margin-top: 20px; /* Add spacing above the footer image */
-            z-index: 0; /* Ensure it is below the text */
-            background-image: url('images/flowers15.png'); /* Use as background */
-            background-repeat: no-repeat; /* Ensure it does not repeat */
-            background-size: contain; /* Contain image within its container */
-            background-position: center; /* Center the image */
-            height: 200px; /* Set specific height */
-        }
         .main-content .rsvp-text {
             font-size: small;
             font-weight: bold;
             margin-top: 10px;
-            font-family: Georgia, serif; /* Apply Georgia font */
+            font-family: Georgia, serif;
         }
     </style>
 </head>
@@ -155,6 +142,5 @@
             </div>
         </div>
     </div>
-    <div class="footer-image"></div>
 </body>
 </html>
